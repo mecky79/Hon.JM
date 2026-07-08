@@ -36,6 +36,14 @@
 
     <!-- NEWS CONTENT -->
     <section class="news-content">
+                <!-- DYNAMIC POSTS — loaded from Supabase -->
+        <div id="dynamic-posts" style="display:none;"></div>
+
+        <!-- SINGLE POST VIEW -->
+        <div id="single-post" style="display:none;"></div>
+
+        <!-- STATIC POSTS — shown when no real posts exist -->
+        <div id="static-posts">
 
         <!-- FEATURED POST -->
         <div class="news-featured">
@@ -120,6 +128,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
 </body>
 </html>
